@@ -30,7 +30,9 @@ a:hover {
 img {
     max-width: 100%;
 }
-
+p {
+    font-size: 1.5rem;
+}
 /*
     FONT FAMILY OF LOGO
 */
