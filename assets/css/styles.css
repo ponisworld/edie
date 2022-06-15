@@ -1,0 +1,460 @@
+/*
+    GENERAL ASPECTS :
+        no margin, no padding, border-box, font....
+*/
+
+* {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 12px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+}
+a:hover {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+    FONT FAMILY OF LOGO
+*/
+h1 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+}
+
+/*
+    DIFFERENT FONT-WEIGHTS W CLASSES
+*/
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight:300;
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align:left;
+    width: 100%;
+}
+
+/*
+    HEADER
+*/
+header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    ul li a {
+        font-size: 0.59em;
+    }
+}
+
+/*
+    MAIN : 
+     #mainHeadings & #intro section
+*/
+.blue {
+    color: #2D9CDB;
+}
+
+#mainphoto {
+    width: 90vw;
+    display:flex;
+    justify-items:center;
+    border-radius: 18px;
+}
+
+#mainHeadings {
+    margin: 1rem 10% 1rem 10%;
+    max-width:50vw;
+}
+
+#intro {
+    max-width: 28vw;
+    min-width: min-content;
+    margin: 1rem 30vw 1rem 5rem;
+}
+
+#intro h2, #intro p {
+    margin-bottom:1rem;
+}
+
+    /*
+        FORM
+    */
+
+input {
+    width: 350px;
+    height: 47px;
+    border-radius: 12px;
+    border:hidden;
+    background-color: #F2F2F2;
+}
+
+.relative {
+    position: relative;
+}
+
+form button {
+    width:6rem;
+    height: 2rem;
+}
+
+button {
+    border:hidden;
+    border-radius: 12px;
+}
+
+.bluebg {
+    color: #fff;
+    background-color: #2D9CDB;
+}
+
+form .absolute {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+
+    /*
+        #services section
+    */
+
+#services h2 {
+    font-size: 3rem;
+}
+
+#services {
+    margin: 10rem 3rem;
+}
+
+#gridBoxes {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-content:center;
+}
+
+.box {
+    padding:2rem 1.2rem 2rem 3rem;
+    width: 20vw;
+}
+
+.box button {
+    padding:0.6rem;
+}
+
+.box:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+}
+
+.box span {
+    color: #fff;
+    border-radius: 16px;
+    width: 5rem;
+    height: 5rem;
+    padding: 1.4rem;
+}
+
+.box span#edit {
+    background-color: #2D9CDB;
+}
+
+.box span#code {
+    background-color: #27AE60;
+}
+
+.box span#storage {
+    background-color: #EB5757;
+}
+
+.box h3, .box p, .box button {
+    margin-top:2rem;
+}
+
+.box button.graybg {
+    background-color: #E0E0E0;
+    border:hidden;
+    color:#828282;
+}
+
+.box button.graybg:hover {
+    color: #fff;
+    background-color: #2D9CDB;
+}
+
+    /*
+    ourWorks section
+    */
+
+#ourWorks h2:first-child {
+    font-size: 3rem;
+    margin-left: 10vw;
+}
+#ourWorks .flex h2 {
+    font-size: 2rem;
+}
+#ourWorks .flex h4 {
+    font-size: 1.2rem;
+    color: #828282;
+}
+#ourWorks div.flex {
+    display:flex;
+    width: 80vw;
+}
+
+.flex-column {
+    display:flex;
+    flex-direction: column;
+}
+.flex-column > article:first-of-type {
+    margin-bottom:10rem;
+}
+.bottom {
+    margin-top: 10rem;
+}
+
+#ourWorks img {
+    max-width: 30vw;
+    border-radius: 12px;
+}
+
+#ourWorks a.blue {
+    text-align: right;
+    display:inline-block;
+    width: 80vw;
+    text-decoration: underline;
+}
+
+/*
+    TEAM SECTION
+*/
+#team {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 2rem;
+}
+
+#team h2 {
+    font-size:3rem;
+}
+
+.red {
+    color:#EB5757;
+}
+
+#team > article > p:last-of-type {
+    color:#4F4F4F;
+}
+
+#team article {
+    width:20vw;
+}
+
+.gridTwo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10rem 5rem -10rem 5rem;
+}
+.gridTwo img {
+    border-radius: 24px;
+    width: 25rem;
+    margin: 0.5rem;
+}
+#person1 {
+    grid-area:1/2/2/3;
+}
+
+#person2 {
+    grid-area:2/2/3/3;
+}
+
+#person3 {
+    margin-top:5rem;
+    margin-bottom:-10rem;
+}
+
+/*
+    CLIENTS SECTION
+*/
+
+#clients {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction:column;
+}
+#clients h2 {
+    font-size:3rem;
+    width: 70vw;
+}
+
+#clients div#customer {
+    display:flex;
+    margin: 0 0 0 8vw;
+    align-items: center;
+}
+
+#clients img {
+    width: 82px;
+    border-radius: 1rem;
+}
+#customer h2 {
+    font-size:2rem;
+}
+#customer {
+    margin: 2rem 0;
+}
+/*
+    FOOTER
+*/
+footer {
+    background-color: #100E1D;
+    color:#F2F2F2;
+    padding: 4rem 2rem 0 2rem;
+    margin-top:1rem;
+}
+footer ul li a {
+    color:#F2F2F2;
+    font-size:1.5rem;
+}
+footer ul {
+    display:flex;
+    flex-direction: column;
+}
+
+.gridThree {
+    display:grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+#credits {
+    margin-top:5rem;
+}
+footer a {
+    color: #f2f2f2;
+}
+.wantUs {
+    font-weight: 400;
+}
+footer button.absolute {
+    top:5px;
+    right: 10px;
+    height: 3rem;
+}
+/*
+    MEDIA QUERIES
+*/
+
+@media screen and (max-width:900px) {
+
+    #team article {
+        margin-top:5rem;
+        width: 70vw;
+    }
+    #team {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    
+    /*
+        mobile headings
+    */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size:2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+    /*
+        mobile nav
+    */
+    header nav {
+        display:none;
+    }
+
+    form .absolute {
+        right:10px;
+    }
+
+    /*
+        sections
+    */
+    #gridBoxes {
+        display:flex;
+        flex-direction: column;
+    }
+
+    article.box {
+        width: 70vw;
+    }
+
+    #ourWorks div.flex {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .bottom {
+        margin:0;
+    }
+
+    #ourWorks img {
+        max-width: 75vw;
+    }
+
+    #clients h2 {
+        font-size:2rem;
+    }
+    
+    .gridThree {
+        display:flex;
+        flex-direction: column;
+    }
+}
